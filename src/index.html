@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+   
+    <title>Vertical Swiper Slider</title> 
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #f0f0f0;
+      }
+
+      .swiper-container {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #f0f0f0;
+      }
+
+      /* Fixed text on the left-bottom side */
+      .fixed-text {
+        position: fixed;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 3px;
+        bottom: 50px;
+        left: 50px;
+        font-weight: bold;
+        text-align: left;
+        color: #000;
+      }
+      button {
+        font-style: normal;
+        font-weight: 600;
+        padding: 0px;
+        margin: 0px;
+        letter-spacing: 3px;
+        font-size: 12px;
+        font-family: "Lato", sans-serif;
+        background-color: none; /* Green background color */
+        border: none; /* No border */
+      }
+      button:focus {
+        outline: none;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+        outline: none;
+      }
+      a:hover {
+        color: #000;
+        text-decoration: none;
+      }
+      a:focus {
+        color: #000;
+        text-decoration: none;
+      }
+      .button-gray {
+        color: #a3a3a3;
+        padding-left: 3px;
+      }
+      .content{
+        z-index: 9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="content">
+        <div class="fixed-text">
+          <div class="mb-2"><a href="" id="li">SPLY BAG(1)</a></div>
+          
+          <div class="mb-2">
+            <label id="product_name">YZY PODS</label>
+         
+            <label id="price">BR11,478.00</label>
+          </div>
+          
+            
+         
+          
+          
+          <div class="mb-2">
+            <button  id="b">DELIVERY WITHIN 4 WEEKS</button>
+            <button id="w" class="button-gray"></button>
+          </div>
+          <div class="mb-2">
+            <label id="size" >Size</label>
+            <button id="aa" class="button-gray">1</button>
+            <button id="bb" class="button-gray">2</button>
+            <button id="cc" class="button-gray">3</button>
+            <button id="sw" >SIZE GUIDE</button>
+            
+          </div>
+          <div class="mb-2">
+            <button id="o" >ORDER </button>
+            <svg style="width: 25px; height: 10px;" id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.81 17.4"><defs><style>.cls-1{stroke-width:0px;}</style></defs><polygon class="cls-1" points="7.43 .11 6 1.65 12.45 7.65 .15 7.65 .15 9.75 12.46 9.75 6 15.75 7.43 17.29 16.67 8.7 7.43 .11"></polygon></svg>
+          </div>
+        </div>
+      </div>
+      <!-- Swiper Container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="https://sply.yeezy.com/cdn/shop/files/Pod_update.gif" alt="img" height="400" width="300" class="mx-auto">
+          </div>
+          <div class="swiper-slide">
+            <canvas class="we"></canvas>
+          </div>
+          <div class="swiper-slide">
+            <canvas class="webg"></canvas>
+          </div>
+          <div class="swiper-slide">
+            <canvas class="webgl"></canvas>
+          </div>
+          <div class="swiper-slide">
+            <canvas class="web"></canvas>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://sply.yeezy.com/cdn/shop/files/Vinyl5.4NoBack.gif?v=1703222046&width=823" alt="img" height="400" width="300" class="mx-auto">
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS (required for Swiper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Include Three.js library -->
+    <script src="https://threejs.org/build/three.js"></script>
+    <!-- <script src="./three.js"></script> -->
+    <script type="text/javascript" src="Script.js"></script>
+    <!-- Initialize Swiper -->
+   
+  </body>
+</html>
